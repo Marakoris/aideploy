@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог AIDeploy — статьи про AI-агентов и автоматизацию бизнеса</title>
+  <meta name="description" content="Блог AIDeploy: экспертные статьи про AI-агентов, чат-ботов, автоматизацию бизнеса, интеграции с CRM и мессенджерами. Кейсы и руководства.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://aideploy.ru/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Блог AIDeploy — AI-агенты для бизнеса">
+  <meta property="og:description" content="Экспертные статьи про AI-агентов, чат-ботов, автоматизацию бизнеса">
+  <meta property="og:url" content="https://aideploy.ru/blog/">
+  <!-- Yandex.Metrika -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=109086890','ym');
+    ym(109086890, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 0;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-nav a {
+      color: #94a3b8;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+    }
+    .header-nav a:hover { color: #f97316; text-decoration: none; }
+    .blog-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .blog-container h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: #f8fafc;
+    }
+    .blog-subtitle {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .article-card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(249,115,22,0.3);
+    }
+    .article-card h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #f8fafc;
+    }
+    .article-card h2 a { color: #f8fafc; }
+    .article-card h2 a:hover { color: #f97316; text-decoration: none; }
+    .article-card p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .article-card .meta {
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 4rem;
+      color: #64748b;
+    }
+    .empty-state p { font-size: 1.1rem; }
+    .site-footer {
+      background: #0c1222;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 3rem 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .site-footer a { color: #94a3b8; }
+    @media (max-width: 768px) {
+      .blog-container h1 { font-size: 1.8rem; }
+      .header-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">AIDeploy</a>
+      <nav class="header-nav">
+        <a href="/#services">Услуги</a>
+        <a href="/#cases">Кейсы</a>
+        <a href="/#pricing">Тарифы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/#request-form">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="blog-container">
+    <h1>Блог</h1>
+    <p class="blog-subtitle">Статьи про AI-агентов, автоматизацию и рост бизнеса</p>
+
+    <div class="articles-grid" id="articles">
+      <div class="empty-state">
+        <p>Статьи скоро появятся. Мы готовим полезные материалы.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AIDeploy — AI-агенты для бизнеса</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="/privacy-policy">Политика конфиденциальности</a> ·
+      <a href="/public-offer">Оферта</a> ·
+      <a href="tel:+79307202469">+7 930 720 24 69</a> ·
+      <a href="mailto:info@aideploy.ru">info@aideploy.ru</a>
+    </p>
+  </footer>
+
+  <script src="https://app.aideploy.ru/widget.js" data-agent="a5f8f96a-35a3-4fce-85f0-e6561cb09e72"></script>
+</body>
+</html>

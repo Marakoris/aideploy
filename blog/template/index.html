@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | AIDeploy</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{TITLE}} | AIDeploy">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:site_name" content="AIDeploy">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}} | AIDeploy">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=109086890','ym');
+    ym(109086890, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109086890" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-nav a {
+      color: #94a3b8;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: #f97316; text-decoration: none; }
+
+    /* Article */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .breadcrumbs {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .breadcrumbs a { color: #94a3b8; }
+
+    article h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: #f8fafc;
+    }
+    article h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      color: #f8fafc;
+      border-left: 4px solid #f97316;
+      padding-left: 1rem;
+    }
+    article h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: #f1f5f9;
+    }
+    article p {
+      margin-bottom: 1.2rem;
+      color: #cbd5e1;
+    }
+    article ul, article ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: #cbd5e1;
+    }
+    article li { margin-bottom: 0.5rem; }
+    article img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+    article blockquote {
+      border-left: 4px solid #f97316;
+      background: rgba(249, 115, 22, 0.1);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    article th, article td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #334155;
+      text-align: left;
+    }
+    article th {
+      background: #1e293b;
+      color: #f97316;
+      font-weight: 600;
+    }
+    article td { color: #cbd5e1; }
+    article code {
+      background: #1e293b;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #f97316;
+    }
+    article pre {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    article pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(239,68,68,0.1));
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .summary-box h3 { color: #f97316; margin-top: 0; }
+
+    /* FAQ */
+    .faq-section {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+    }
+    .faq-section h2 { border-left: none; padding-left: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      color: #f97316;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .article-cta {
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .article-cta h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .article-cta p { color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; }
+    .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: #f97316;
+      font-weight: 700;
+      padding: 0.875rem 2.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0c1222;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 3rem 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .site-footer a { color: #94a3b8; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      article h1 { font-size: 1.6rem; }
+      article h2 { font-size: 1.3rem; }
+      .header-nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">AIDeploy</a>
+      <nav class="header-nav">
+        <a href="/#services">Услуги</a>
+        <a href="/#cases">Кейсы</a>
+        <a href="/#pricing">Тарифы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/#request-form">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-container">
+    <div class="breadcrumbs">
+      <a href="/">Главная</a> → <a href="/blog/">Блог</a> → <span>{{BREADCRUMB_TITLE}}</span>
+    </div>
+
+    <main>
+      {{CONTENT}}
+    </main>
+
+    <div class="article-cta">
+      <h3>Готовы автоматизировать бизнес?</h3>
+      <p>Получите бесплатную консультацию и персональное предложение по внедрению AI-агента</p>
+      <a href="/#request-form" class="cta-button">Оставить заявку</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AIDeploy — AI-агенты для бизнеса</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="/privacy-policy">Политика конфиденциальности</a> ·
+      <a href="/public-offer">Оферта</a> ·
+      <a href="tel:+79307202469">+7 930 720 24 69</a> ·
+      <a href="mailto:info@aideploy.ru">info@aideploy.ru</a>
+    </p>
+  </footer>
+
+  <script src="https://app.aideploy.ru/widget.js" data-agent="a5f8f96a-35a3-4fce-85f0-e6561cb09e72"></script>
+</body>
+</html>
