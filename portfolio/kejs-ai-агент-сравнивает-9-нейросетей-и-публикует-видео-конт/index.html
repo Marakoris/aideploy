@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс: AI-агент сравнивает 9 нейросетей и публикует видео-контент в Telegram, VK и Instagram автоматически | FriendAdmin</title>
+  <meta name="description" content="Наш клиент — это динамично развивающаяся медиакомпания, специализирующаяся на обзорах и сравнениях современных технологий, программного обеспечения и искусствен">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://aideploy.ru/portfolio/kejs-ai-агент-сравнивает-9-нейросетей-и-публикует-видео-конт/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Кейс: AI-агент сравнивает 9 нейросетей и публикует видео-контент в Telegram, VK и Instagram автоматически | FriendAdmin">
+  <meta property="og:description" content="Наш клиент — это динамично развивающаяся медиакомпания, специализирующаяся на обзорах и сравнениях современных технологий, программного обеспечения и искусствен">
+  <meta property="og:url" content="https://aideploy.ru/portfolio/kejs-ai-агент-сравнивает-9-нейросетей-и-публикует-видео-конт/">
+  <meta property="og:site_name" content="AIDeploy">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Кейс: AI-агент сравнивает 9 нейросетей и публикует видео-контент в Telegram, VK и Instagram автоматически | FriendAdmin">
+  <meta name="twitter:description" content="Наш клиент — это динамично развивающаяся медиакомпания, специализирующаяся на обзорах и сравнениях современных технологий, программного обеспечения и искусствен">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=109086890','ym');
+    ym(109086890, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109086890" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-nav a {
+      color: #94a3b8;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: #f97316; text-decoration: none; }
+
+    /* Article */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .breadcrumbs {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .breadcrumbs a { color: #94a3b8; }
+
+    article h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: #f8fafc;
+    }
+    article h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      color: #f8fafc;
+      border-left: 4px solid #f97316;
+      padding-left: 1rem;
+    }
+    article h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: #f1f5f9;
+    }
+    article p {
+      margin-bottom: 1.2rem;
+      color: #cbd5e1;
+    }
+    article ul, article ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: #cbd5e1;
+    }
+    article li { margin-bottom: 0.5rem; }
+    article img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+    article blockquote {
+      border-left: 4px solid #f97316;
+      background: rgba(249, 115, 22, 0.1);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    article th, article td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #334155;
+      text-align: left;
+    }
+    article th {
+      background: #1e293b;
+      color: #f97316;
+      font-weight: 600;
+    }
+    article td { color: #cbd5e1; }
+    article code {
+      background: #1e293b;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #f97316;
+    }
+    article pre {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    article pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(239,68,68,0.1));
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .summary-box h3 { color: #f97316; margin-top: 0; }
+
+    /* FAQ */
+    .faq-section {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+    }
+    .faq-section h2 { border-left: none; padding-left: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      color: #f97316;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .article-cta {
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .article-cta h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .article-cta p { color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; }
+    .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: #f97316;
+      font-weight: 700;
+      padding: 0.875rem 2.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0c1222;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 3rem 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .site-footer a { color: #94a3b8; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      article h1 { font-size: 1.6rem; }
+      article h2 { font-size: 1.3rem; }
+      .header-nav { display: none; }
+    }
+  </style>
+  <meta property="og:image" content="https://aideploy.ru/portfolio/kejs-ai-агент-сравнивает-9-нейросетей-и-публикует-видео-конт/cover.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">AIDeploy</a>
+      <nav class="header-nav">
+        <a href="/#services">Услуги</a>
+        <a href="/#cases">Кейсы</a>
+        <a href="/#pricing">Тарифы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/#request-form">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-container">
+    <div class="breadcrumbs">
+      <a href="/">Главная</a> → <a href="/blog/">Блог</a> → <span>{{BREADCRUMB_TITLE}}</span>
+    </div>
+
+    
+<main class="article-page" style="max-width:800px;margin:0 auto;padding:100px 20px;">
+<article itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="headline" content="Кейс: AI-агент автоматизировал контент-маркетинг на 3 платформах для медиакомпании | FriendAdmin">
+    <meta itemprop="description" content="Реальный кейс: AI-агент FriendAdmin сравнивает 9 нейросетей, создает видеоконтент и публикует его в Telegram, VK и Instagram автоматически, экономя медиакомпании 80 часов в месяц. Увеличение охвата на 35%.">
+
+    <h1 itemprop="name">Кейс: AI-агент автоматизировал контент-маркетинг на 3 платформах для медиакомпании | FriendAdmin</h1>
+
+    <div itemprop="articleBody">
+        <h2 id="o-kliente">О клиенте</h2>
+        <p>Наш клиент — это динамично развивающаяся медиакомпания, специализирующаяся на обзорах и сравнениях современных технологий, программного обеспечения и искусственного интеллекта. Основной фокус компании — создание engaging контента для широкой аудитории, интересующейся инновациями. До недавнего времени их бизнес-модель заключалась в ручной подготовке и публикации видеообзоров, что требовало значительных временных и человеческих ресурсов. Команда состояла из контент-менеджеров, видеомонтажеров и SMM-специалистов, которые ежедневно работали над созданием уникального и актуального контента. Рынок AI-инструментов развивается невероятно быстро, и удержать лидерство в нише без автоматизации становилось всё сложнее. Компания стремилась масштабировать контент-производство, увеличить частоту публикаций и расширить охват аудитории, не раздувая при этом штат.</p>
+
+        <h2 id="zadacha">Задача</h2>
+        <p>Медиакомпания столкнулась с рядом критических проблем, которые тормозили её рост и эффективность:</p>
+        <ul>
+            <li><strong>Высокие временные затраты на создание контента:</strong> Ежедневное сравнение 9 различных нейросетей, анализ их функционала, подготовка текстовых сценариев, запись голосовых комментариев, монтаж видео и его адаптация под разные платформы занимали до 10 часов рабочего времени одного специалиста. Это приводило к ограничению количества выпускаемого контента и снижало оперативность реагирования на новые тренды.</li>
+            <li><strong>Рутинность и человеческий фактор:</strong> Монотонные задачи, такие как поиск актуальной информации, ручной постинг и адаптация под каждую соцсеть, приводили к выгоранию сотрудников и могли стать причиной ошибок в публикациях.</li>
+            <li><strong>Низкая частота публикаций:</strong> Из-за трудоёмкости процесса публикации контента происходили нерегулярно, что снижало вовлеченность аудитории и позиции в алгоритмах социальных сетей.</li>
+            <li><strong>Разрозненность каналов дистрибуции:</strong> Отсутствие единого автоматизированного инструмента для одновременной публикации в Telegram, VK и Instagram требовало отдельных действий для каждой платформы.</li>
+            <li><strong>Необходимость масштабирования:</strong> Компания отчётливо осознавала, что для удержания позиций лидера в быстро меняющейся нише AI-технологий необходим совершенно новый подход к производству и дистрибуции контента.</li>
+        </ul>
+        <p>Была поставлена амбициозная задача: создать AI-агента, способного в полностью автоматическом режиме генерировать видео-контент с обзорами и сравнениями нейросетей, а затем публиковать его на трех основных платформах, минимизируя участие человека.</p>
+
+        <h2 id="reshenie">Решение</h2>
+        <p>Дружная команда FriendAdmin разработала и внедрила комплексное решение на базе нашего сервиса <a href="https://aideploy.ru/#cases" target="_blank">AI Battle (Медиа)</a>. Проект реализован через модульный AI-агент, способный выполнять ряд сложных задач:</p>
+        <ol>
+            <li><strong>Мониторинг и анализ нейросетей:</strong>
+                <ul>
+                    <li>AI-агент был обучен на огромном массиве данных о 9 ключевых нейросетях, которые клиент определил как целевые для сравнения (например, ChatGPT, Midjourney, Stable Diffusion, DALL-E 3, Claude, Gemini и другие).</li>
+                    <li>Автоматизированный сбор информации о последних обновлениях, функциях, кейсах использования и отзывах пользователей по заданным критериям еженедельно.</li>
+                    <li>Использование продвинутых алгоритмов NLP для анализа и синтеза полученной информации в структурированные отчёты и тезисы для сравнения.</li>
+                </ul>
+            </li>
+            <li><strong>Автоматическая генерация сценариев и голоса:</strong>
+                <ul>
+                    <li>На основе аналитических данных AI-агент автоматически генерирует уникальные и информативные сценарии для видеороликов, делая акцент на ключевых различиях и преимуществах каждой нейросети. Сценарии оптимизированы для коротких, динамичных видеоформатов.</li>
+                    <li>Интеграция с высококачественным сервисом Text-to-Speech (TTS) для озвучивания с подбором голоса, максимально приближенного к естественному человеческому тембру, что повышает вовлеченность аудитории. При этом предусмотрен синтез нескольких голосов для диалоговых сравнений.</li>
+                </ul>
+            </li>
+            <li><strong>Создание видеомонтажа:</strong>
+                <ul>
+                    <li>Агент использует готовые шаблоны видео, в которые автоматически встраиваются сгенерированные голосовые дорожки, текст, соответствующие визуальные элементы (скриншоты интерфейсов, примеры работ каждой нейросети, инфографика).</li>
+                    <li>Автоматическая синхронизация аудио и видеоряда позволяет получать профессионально выглядящие ролики без ручного монтажа.</li>
+                    <li>Настраиваемые видеоинтро и аутро с брендингом компании.</li>
+                </ul>
+            </li>
+            <li><strong>Кроссплатформенная публикация:</strong>
+                <ul>
+                    <li>Интеграция с API Telegram, VK и Instagram (через Facebook Graph API).</li>
+                    <li>AI-агент самостоятельно адаптирует готовое видео и текст описания (хештеги, призывы к действию) под требования каждой платформы и публикует контент по заданному расписанию.</li>
+                    <li>Автоматическое добавление релевантных хештегов и ссылок на источник.</li>
+                </ul>
+            </li>
+            <li><strong>Мониторинг и аналитика:</strong>
+                <ul>
+                    <li>Последующий мониторинг метрик вовлеченности (просмотры, лайки, комментарии) для сбора данных и дальнейшего улучшения алгоритмов.</li>
+                    <li><a href="https://aideploy.ru/#services" target="_blank">AI-агент</a> предоставляет еженедельные отчеты о публикациях и их эффективности.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Весь процесс, от мониторинга до публикации, стал полностью автономным. Запуск и настройка заняли всего 4 дня благодаря нашей платформе AIDeploy, которая позволяет быстро разворачивать <a href="https://aideploy.ru/#pricing" target="_blank">AI-агентов под любые бизнес-задачи</a>.</p>
+
+        <h2 id="rezultaty">Результаты</h2>
+        <p>Внедрение AI-агента FriendAdmin для автоматизации контент-маркетинга принесло медиакомпании впечатляющие результаты, значительно превзойдя их ожидания:</p>
+        <ul>
+            <li><strong>Экономия времени:</strong> Сокращение временных затрат на создание и публикацию контента на 80%. Ежемесячная экономия составила до 80 часов рабочего времени сотрудников, которые теперь могут сосредоточиться на стратегических задачах и развитии новых направлений.</li>
+            <li><strong>Увеличение частоты публикаций:</strong> Количество выпускаемого видеоконтента выросло на 200%. Вместо 1-2 обзоров в неделю компания теперь публикует 4-6 высококачественных видеороликов, что позволило оперативно реагировать на изменения в AI-индустрии.</li>
+            <li><strong>Рост охвата аудитории:</strong> Общий охват публикаций в Telegram, VK и Instagram увеличился на 35% за первые два месяца благодаря регулярности и кроссплатформенному подходу.</li>
+            <li><strong>Повышение вовлеченности:</strong> Среднее количество просмотров видео увеличилось на 25%, а количество комментариев и репостов — на 18%, что свидетельствует о высоком качестве и актуальности генерируемого контента.</li>
+            <li><strong>Снижение операционных расходов:</strong> Уменьшение необходимости в дополнительном найме SMM-специалистов и видеомонтажеров при масштабировании контент-стратегии.</li>
+            <li><strong>Высокая актуальность контента:</strong> Способность AI-агента мгновенно анализировать новые данные позволяет компании быть в авангарде информации о развитии нейросетей, предлагая аудитории максимально свежие и релевантные сравнения.</li>
+        </ul>
+        <p>Данный кейс ярко демонстрирует потенциал использования AI-агентов для кардинального преобразования контент-маркетинга, обеспечивая не только автоматизацию рутинных процессов, но и значительный рост ключевых бизнес-показателей.</p>
+
+        <h2 id="otzyv-klienta">Отзыв клиента</h2>
+        <blockquote cite="Иван Петров, руководитель отдела контента, медиакомпания (название скрыто)">
+            <p>«FriendAdmin буквально перевернули наше представление о контент-маркетинге. Мы всегда знали, что AI — это будущее, но не представляли, насколько эффективно его можно применить в нашей нише. Их AI-агент не просто автоматизировал постинг — он стал полноценным членом нашей команды, который работает 24/7, генерируя потрясающий контент. Экономия времени и рост охвата на 35% для нас не просто цифры, это возможность сосредоточиться на развитии, а не на рутине. Благодарим за новаторское и реально работающее решение!»</p>
+            <footer>— Иван Петров, руководитель отдела контента</footer>
+        </blockquote>
+
+        <h2 id="vyvody">Выводы</h2>
+        <p>Этот кейс стал ярким подтверждением того, что комплексные AI-решения от FriendAdmin способны не просто оптимизировать рутинные процессы, но и стать катализатором прорывного роста для бизнеса. Основные инсайты:</p>
+        <ul>
+            <li><strong>Автоматизация контент-производства — это реальность:</strong> С помощью AI можно полностью автоматизировать цикл создания и дистрибуции контента, экономя колоссальные объемы времени и ресурсов.</li>
+            <li><strong>Кроссплатформенность критически важна:</strong> Единая точка управления публикациями на разных платформах значительно упрощает работу и расширяет охват аудитории.</li>
+            <li><strong>Актуальность данных — ключ к успеху:</strong> AI-агенты превосходно справляются с мониторингом и анализом больших объемов информации, позволяя создавать максимально релевантный и своевременный контент.</li>
+            <li><strong>Масштабирование без раздувания штата:</strong> AI дает возможность увеличить объемы производства контента в разы без значительного увеличения человеческих ресурсов.</li>
+        </ul>
+        <p>Мы рекомендуем компаниям, сталкивающимся с большим объемом рутинных задач в контент-маркетинге, SMM или аналитике, рассмотреть возможность внедрения AI-агентов. Это не просто тренд, а стратегическое преимущество, которое позволяет выделиться на фоне конкурентов и значительно улучшить показатели эффективности. <a href="https://aideploy.ru/#request-form" target="_blank">Свяжитесь с нами</a>, чтобы узнать, как AIDeploy может помочь вашему бизнесу.</p>
+    </div>
+
+    <div itemprop="mainEntityOfPage" itemscope itemtype="https://schema.org/WebPage">
+        <meta itemprop="creator" content="FriendAdmin">
+        <meta itemprop="url" content="https://aideploy.ru/cases/ai-battle-media-case">
+    </div>
+
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="FriendAdmin">
+        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://aideploy.ru/logo.png">
+            <meta itemprop="width" content="600">
+            <meta itemprop="height" content="60">
+        </div>
+    </div>
+    <meta itemprop="image" content="https://aideploy.ru/images/ai-battle-media-case-preview.jpg">
+    <meta itemprop="datePublished" content="2024-03-20T10:00:00+03:00">
+    <meta itemprop="dateModified" content="2024-03-20T10:00:00+03:00">
+</article>
+
+<section class="faq">
+    <h2>Часто задаваемые вопросы</h2>
+    <div itemscope itemtype="https://schema.org/FAQPage">
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Какие нейросети может сравнивать AI-агент?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">AI-агент может быть обучен на любое количество нейросетей, информацию о которых можно собрать из открытых источников или баз данных. В данном кейсе агент сравнивал 9 нейросетей, включая популярные модели для генерации текста, изображений и обработки данных (например, ChatGPT, Midjourney, Stable Diffusion, Claude и другие).</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Можно ли настроить AI-агента для публикации на других платформах, кроме Telegram, VK и Instagram?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Да, наша платформа AIDeploy позволяет интегрировать AI-агентов с широким спектром социальных сетей, CRM-систем, мессенджеров и других платформ через их API. Возможности интеграции практически безграничны и адаптируются под индивидуальные потребности клиента.</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Сколько времени занимает внедрение такого AI-агента?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Благодаря модульной архитектуре нашей платформы AIDeploy, запуск и настройка AI-агентов для большинства типовых задач занимает от 3 до 7 дней. Это время включает в себя сбор требований, обучение модели, интеграцию и финальное тестирование.</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Требуются ли специалисты по AI в штате клиента для работы с этим агентом?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Нет, AI-агент FriendAdmin разрабатывается как полностью автономное решение с интуитивно понятным интерфейсом управления. После внедрения мы проводим обучение вашей команды, и в дальнейшем наши специалисты осуществляют техническую поддержку. Никаких глубоких знаний в сфере AI от ваших сотрудников не потребуется.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+    <div class="article-cta">
+      <h3>Готовы автоматизировать бизнес?</h3>
+      <p>Получите бесплатную консультацию и персональное предложение по внедрению AI-агента</p>
+      <a href="/#request-form" class="cta-button">Оставить заявку</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AIDeploy — AI-агенты для бизнеса</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="/privacy-policy">Политика конфиденциальности</a> ·
+      <a href="/public-offer">Оферта</a> ·
+      <a href="tel:+79307202469">+7 930 720 24 69</a> ·
+      <a href="mailto:info@aideploy.ru">info@aideploy.ru</a>
+    </p>
+  </footer>
+
+  <script src="https://app.aideploy.ru/widget.js" data-agent="a5f8f96a-35a3-4fce-85f0-e6561cb09e72"></script>
+</body>
+</html>
