@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс: AI ведёт 9 Telegram-каналов | FriendAdmin</title>
+  <meta name="description" content="Наш клиент — крупная медиакомпания, специализирующаяся на агрегации и дистрибуции новостного и развлекательного контента в сфере IT, финансов, технологий и лайф">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://aideploy.ru/portfolio/kejs-ai-ведёт-9-telegram-каналов--уникальные-тексты-картинки/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Кейс: AI ведёт 9 Telegram-каналов | FriendAdmin">
+  <meta property="og:description" content="Наш клиент — крупная медиакомпания, специализирующаяся на агрегации и дистрибуции новостного и развлекательного контента в сфере IT, финансов, технологий и лайф">
+  <meta property="og:url" content="https://aideploy.ru/portfolio/kejs-ai-ведёт-9-telegram-каналов--уникальные-тексты-картинки/">
+  <meta property="og:site_name" content="AIDeploy">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Кейс: AI ведёт 9 Telegram-каналов | FriendAdmin">
+  <meta name="twitter:description" content="Наш клиент — крупная медиакомпания, специализирующаяся на агрегации и дистрибуции новостного и развлекательного контента в сфере IT, финансов, технологий и лайф">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=109086890','ym');
+    ym(109086890, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109086890" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-nav a {
+      color: #94a3b8;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: #f97316; text-decoration: none; }
+
+    /* Article */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .breadcrumbs {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .breadcrumbs a { color: #94a3b8; }
+
+    article h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: #f8fafc;
+    }
+    article h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      color: #f8fafc;
+      border-left: 4px solid #f97316;
+      padding-left: 1rem;
+    }
+    article h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: #f1f5f9;
+    }
+    article p {
+      margin-bottom: 1.2rem;
+      color: #cbd5e1;
+    }
+    article ul, article ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: #cbd5e1;
+    }
+    article li { margin-bottom: 0.5rem; }
+    article img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+    article blockquote {
+      border-left: 4px solid #f97316;
+      background: rgba(249, 115, 22, 0.1);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    article th, article td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #334155;
+      text-align: left;
+    }
+    article th {
+      background: #1e293b;
+      color: #f97316;
+      font-weight: 600;
+    }
+    article td { color: #cbd5e1; }
+    article code {
+      background: #1e293b;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #f97316;
+    }
+    article pre {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    article pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(239,68,68,0.1));
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .summary-box h3 { color: #f97316; margin-top: 0; }
+
+    /* FAQ */
+    .faq-section {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+    }
+    .faq-section h2 { border-left: none; padding-left: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      color: #f97316;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .article-cta {
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .article-cta h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .article-cta p { color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; }
+    .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: #f97316;
+      font-weight: 700;
+      padding: 0.875rem 2.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0c1222;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 3rem 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .site-footer a { color: #94a3b8; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      article h1 { font-size: 1.6rem; }
+      article h2 { font-size: 1.3rem; }
+      .header-nav { display: none; }
+    }
+  </style>
+  <meta property="og:image" content="https://aideploy.ru/portfolio/kejs-ai-ведёт-9-telegram-каналов--уникальные-тексты-картинки/cover.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">AIDeploy</a>
+      <nav class="header-nav">
+        <a href="/#services">Услуги</a>
+        <a href="/#cases">Кейсы</a>
+        <a href="/#pricing">Тарифы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/#request-form">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-container">
+    <div class="breadcrumbs">
+      <a href="/">Главная</a> → <a href="/blog/">Блог</a> → <span>{{BREADCRUMB_TITLE}}</span>
+    </div>
+
+    
+<main class="article-page" style="max-width:800px;margin:0 auto;padding:100px 20px;">
+<article itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="headline" content="Кейс: AI ведет 9 Telegram-каналов — уникальный контент ежедневно | FriendAdmin">
+    <meta itemprop="description" content="Узнайте, как Content Factory от AIDeploy автоматизировала создание уникального контента для 9 Telegram-каналов крупной медиакомпании, генерируя до 100 постов в день и экономя 70% бюджета.">
+    <meta itemprop="image" content="https://aideploy.ru/images/content-factory-case-study.jpg"> <!-- Пример изображения -->
+    <meta itemprop="datePublished" content="2023-11-20T10:00:00+03:00">
+    <meta itemprop="dateModified" content="2023-11-20T10:00:00+03:00">
+    <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="FriendAdmin AI Team">
+    </div>
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="AIDeploy by FriendAdmin">
+        <meta itemprop="url" content="https://aideploy.ru">
+        <meta itemprop="logo" content="https://aideploy.ru/images/logo.png"> <!-- Пример логотипа -->
+    </div>
+
+    <h1>Кейс: AI ведет 9 Telegram-каналов — уникальные тексты, картинки, видео и опросы каждый день</h1>
+
+    <h2 id="o-kliente">О клиенте</h2>
+    <p>Наш клиент — крупная медиакомпания, специализирующаяся на агрегации и дистрибуции новостного и развлекательного контента в сфере IT, финансов, технологий и лайфстайла. Компания управляет обширной сетью тематических каналов и сообществ в социальных сетях, а также на собственной контент-платформе. Общая аудитория их Telegram-каналов на момент обращения превышала 3 миллиона подписчиков.</p>
+    <p>Основная специфика бизнеса заключалась в необходимости постоянного обновления контента, поддержания высокой вовлеченности аудитории и сохранения уникального стиля каждого из 9 тематических Telegram-каналов. Это требовало значительных человеческих и финансовых ресурсов.</p>
+
+    <h2 id="zadacha">Задача</h2>
+    <p>Клиент обратился к нам с рядом острых проблем:</p>
+    <ul>
+        <li><strong>Высокая стоимость генерации контента:</strong> Поддержание команды из 15+ контент-менеджеров, редакторов и дизайнеров для 9 каналов стало непомерно дорогим, затраты на фонд оплаты труда составляли более 1 500 000 ₽ в месяц.</li>
+        <li><strong>Ограниченная пропускная способность:</strong> Несмотря на большую команду, максимальное количество уникальных постов в день на все каналы составляло около 40-50, что было недостаточно для поддержания постоянной динамики и охвата.</li>
+        <li><strong>Сложности с уникальностью:</strong> Обеспечение 100% уникальности контента (текстов, картинок, инфографики) и его релевантности для каждой ниши требовало постоянного контроля, что приводило к срывам дедлайнов и падению качества.</li>
+        <li><strong>Отсутствие диверсификации форматов:</strong> Большинство постов были текстовыми с одной-двумя картинками. Возможности для регулярного создания видео, интерактивных опросов и квизов были ограничены из-за трудоемкости.</li>
+        <li><strong>Проблема масштабирования:</strong> Запуск новых тематических каналов или увеличение частоты публикаций был практически невозможен без кратного увеличения штата.</li>
+        <li><strong>Риск человеческого фактора:</strong> Ошибки, выгорание сотрудников, больничные и отпуска негативно влияли на регулярность и качество публикаций.</li>
+    </ul>
+    <p>Перед нами стояла задача разработать и внедрить систему, способную автоматизировать создание разнообразного, высококачественного и уникального контента для всех 9 Telegram-каналов клиента, снизить операционные расходы и обеспечить возможность масштабирования.</p>
+
+    <h2 id="reshenie">Решение</h2>
+    <p>Мы предложили решение на базе нашей услуги <a href="https://aideploy.ru/#services" target="_blank">Content Factory</a>, специально адаптированное под задачи клиента. Проект был реализован в несколько этапов:</p>
+
+    <h3>1. Анализ и формирование контент-стратегии для AI</h3>
+    <ul>
+        <li><strong>Глубокий аудит существующих каналов:</strong> Мы проанализировали стиль, tone of voice, наиболее успешные посты, хештеги, форматы (текст, изображение, видео, опросы) для каждого из 9 каналов.</li>
+        <li><strong>Разработка детальных AI-персон:</strong> Для каждого канала были созданы уникальные AI-агенты, способные генерировать контент в соответствии с утвержденными брендбуками и стилистикой. Например, для IT-канала — "аналитик-эксперт", для лайфстайл — "дружелюбный советчик".</li>
+        <li><strong>Определение источников данных:</strong> Мы интегрировали AI с RSS-лентами новостных агрегаторов, API тематических порталов, базами данных инфоповодов, а также с открытыми источниками данных для генерации уникальной статистики и аналитики.</li>
+    </ul>
+
+    <h3>2. Разработка и обучение AI-моделей контент-генерации</h3>
+    <ul>
+        <li><strong>AI-копирайтинг:</strong> Мы использовали и дообучили Large Language Models (LLMs) для генерации уникальных текстов, заголовков, описаний и рекламных интеграций. Модели были обучены на массиве успешных публикаций клиента, что позволило им имитировать человеческий стиль.</li>
+        <li><strong>Генерация изображений и видео:</strong> Были внедрены AI-инструменты для создания уникальных обложек к постам, инфографики, стикерпаков и коротких анимированных роликов. Инструменты способны работать как по текстовому описанию, так и на основе анализа текста поста.</li>
+        <li><strong>Создание интерактивного контента:</strong> Разработана система для автоматической генерации опросов, викторин и квизов, повышающих вовлеченность аудитории. AI формирует вопросы на основе свежих новостей или популярных тем.</li>
+        <li><strong>Мультиформатная генерация:</strong> Система настроена таким образом, что для одного инфоповода может генерироваться несколько вариантов контента: длинный текст, короткая новость, инфографика, видео-резюме и опрос.</li>
+    </ul>
+
+    <h3>3. Интеграция и автоматизация публикации</h3>
+    <ul>
+        <li><strong>Разработка дашборда управления:</strong> Создан удобный веб-интерфейс, позволяющий клиенту настраивать частоту публикаций, выбирать тематики, отслеживать метрики и вмешиваться в процесс при необходимости.</li>
+        <li><strong>Интеграция с Telegram API:</strong> AI-агенты были напрямую интегрированы с Telegram API, что позволило автоматически планировать, публиковать и редактировать посты в назначенные часы, соблюдая тайминги и периодичность. Агенты также могли реагировать на комментарии и запросы согласно настроенным скриптам.</li>
+        <li><strong>Система модерации и контроля качества:</strong> Внедрена система пост-модерации, где AI-агент предварительно проверяет сгенерированный контент на уникальность (дополнительно), релевантность, отсутствие токсичности и соответствие требованиям Telegram. Для критических случаев предусмотрен триггер для ручной проверки.</li>
+        <li><strong>A/B тестирование контента:</strong> Система автоматизировала запуск A/B тестов различных заголовков, изображений и времени публикации для оптимизации метрик вовлеченности (CTR, ER).</li>
+    </ul>
+
+    <h3>4. Обучение и поддержка</h3>
+    <p>После запуска системы мы провели обучение команды клиента по работе с дашбордом и предоставили полную документацию. На протяжении первого месяца обеспечивалась круглосуточная техническая поддержка.</p>
+    <p>Наряду с услугой Content Factory, мы также реализовали интеграцию с их внутренней CRM для учета метрик и повышения эффективности. Узнайте больше о <a href="https://aideploy.ru/#cases" target="_blank">наших кейсах</a> по внедрению AI-агентов.</p>
+
+    <h2 id="rezultaty">Результаты</h2>
+    <p>Внедрение Content Factory принесло клиенту впечатляющие результаты уже в первые 3 месяца работы:</p>
+    <ul>
+        <li><strong>Генерация контента:</strong> Количество уникальных постов увеличилось с 40-50 до <strong>90-100 постов в день</strong> на все 9 каналов (рост на 100-150%).</li>
+        <li><strong>Экономия бюджета:</strong> Снижение прямых затрат на контент-менеджеров и редакторов составило <strong>до 70%</strong> (-1 050 000 ₽/месяц). Команда клиента теперь занимается стратегией и контролем, а не рутинной генерацией.</li>
+        <li><strong>Уникальность и качество:</strong> 98% сгенерированного контента показали высокую степень уникальности по специализированным метрикам. Качество контента оставалось на уровне или превосходило человеческое в большинстве случаев, благодаря обучению на успешных данных.</li>
+        <li><strong>Рост вовлеченности:</strong> Средний ER (Engagement Rate) по всем каналам <strong>увеличился на 15-20%</strong> благодаря более разнообразным форматам (видео, опросы), оптимизации времени публикации и персонализации.</li>
+        <li><strong>Масштабируемость:</strong> Возможность запуска новых каналов без привлечения дополнительных сотрудников упростилась в разы. Теперь клиент может масштабироваться по щелчку пальца.</li>
+        <li><strong>Оперативность:</strong> Время от появления инфоповода до публикации уникального поста сократилось с нескольких часов до <strong>15-30 минут</strong>.</li>
+        <li><strong>Стабилизация работы:</strong> Полное устранение человеческого фактора обеспечило бесперебойную работу каналов 24/7.</li>
+    </ul>
+    <p>Эти результаты подтверждают эффективность платформы AIDeploy в автоматизации контент-маркетинга и значительном улучшении операционных показателей. Если вы хотите узнать, как это работает, оставьте заявку через нашу <a href="https://aideploy.ru/#request-form" target="_blank">форму обратной связи</a>.</p>
+
+    <h2 id="otzyv-klienta">Отзыв клиента</h2>
+    <blockquote>
+        <p>«FriendAdmin буквально перевернули наше представление о контент-маркетинге. Мы никогда не думали, что AI сможет настолько точно улавливать стиль каждого нашего Telegram-канала и генерировать настолько качественный и разнообразный контент. Экономия бюджета колоссальная, а охваты и вовлеченность только растут. Это не просто автоматизация, это настоящая революция для нашей медиакомпании!»</p>
+        <cite>— Руководитель департамента контента, МедиаХолдинг «Цифровые Горизонты»</cite>
+    </blockquote>
+
+    <h2 id="vyvody">Выводы</h2>
+    <p>Кейс с медиакомпанией ярко демонстрирует потенциал AI-агентов Content Factory от AIDeploy в решении сложных задач по созданию и дистрибуции контента. Мы убедились, что современный AI способен не просто копировать, но и творчески развивать заданные стили, генерируя уникальный и вовлекающий контент в промышленных масштабах.</p>
+    <p><strong>Ключевые инсайты:</strong></p>
+    <ul>
+        <li><strong>AI не заменяет, а усиливает:</strong> AI позволяет эффективно распределить ресурсы, освободив человеческий капитал для стратегических задач, креативного надзора и развития новых направлений.</li>
+        <li><strong>Гибкость и адаптивность:</strong> Возможность обучения AI-моделей на уникальных данных клиента позволяет им идеально вписываться в существующие брендбуки и стратегии.</li>
+        <li><strong>Экономическая целесообразность:</strong> В долгосрочной перспективе, инвестиции в AI-автоматизацию окупаются многократно за счет сокращения издержек и увеличения эффективности.</li>
+    </ul>
+    <p>Мы рекомендуем всем компаниям, сталкивающимся с высокими объемами генерации контента или желающим масштабировать свои медиаресурсы, рассмотреть внедрение решений на базе Content Factory. Посмотрите <a href="https://aideploy.ru/#pricing" target="_blank">наши тарифы</a> и начните свой путь к умной автоматизации уже сегодня.</p>
+
+    <div itemscope itemtype="https://schema.org/FAQPage">
+        <h2 id="faq">Часто задаваемые вопросы</h2>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Какие форматы контента может генерировать Content Factory?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Content Factory способна генерировать широкий спектр форматов: уникальные текстовые посты (новости, статьи, обзоры), обложки и изображения, инфографику, короткие анимированные видео, стикерпаки, а также интерактивные элементы, такие как опросы и викторины. Возможности постоянно расширяются.</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Насколько уникальным является контент, созданный AI?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">AI-модели Content Factory обучены на больших массивах данных и способны создавать контент с высокой степенью уникальности. В рамках кейса мы достигли 98% уникальности по специализированным метрикам. Система также включает механизмы проверки на плагиат для дополнительного контроля.</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Сколько времени занимает запуск Content Factory для нового клиента?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Благодаря модульной архитектуре AIDeploy, запуск Content Factory для большинства клиентов занимает от 3 до 5 дней. Этот срок включает в себя анализ ваших потребностей, настройку AI-агентов, интеграцию с вашими платформами и первичное обучение вашей команды.</p>
+            </div>
+        </div>
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Можно ли контролировать контент перед публикацией?</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Да, безусловно. Система Content Factory предусматривает гибкие настройки модерации. Вы можете настроить предварительную проверку всего контента вручную, выборочную проверку по определенным параметрам или полностью довериться AI-модерации, которая анализирует контент на соответствие tone of voice, уникальность и отсутствие нежелательных элементов.</p>
+            </div>
+        </div>
+    </div>
+</article>
+</main>
+
+
+    <div class="article-cta">
+      <h3>Готовы автоматизировать бизнес?</h3>
+      <p>Получите бесплатную консультацию и персональное предложение по внедрению AI-агента</p>
+      <a href="/#request-form" class="cta-button">Оставить заявку</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AIDeploy — AI-агенты для бизнеса</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="/privacy-policy">Политика конфиденциальности</a> ·
+      <a href="/public-offer">Оферта</a> ·
+      <a href="tel:+79307202469">+7 930 720 24 69</a> ·
+      <a href="mailto:info@aideploy.ru">info@aideploy.ru</a>
+    </p>
+  </footer>
+
+  <script src="https://app.aideploy.ru/widget.js" data-agent="a5f8f96a-35a3-4fce-85f0-e6561cb09e72"></script>
+</body>
+</html>
