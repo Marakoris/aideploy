@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс: AI-агент автоматически закупает SEO-ссылки | FriendAdmin</title>
+  <meta name="description" content="Оптимизация линкбилдинга для SEO-агентства с помощью технологий AIDeploy">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://aideploy.ru/portfolio/kejs-ai-агент-автоматически-закупает-seo-ссылки--21-url-на-а/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Кейс: AI-агент автоматически закупает SEO-ссылки | FriendAdmin">
+  <meta property="og:description" content="Оптимизация линкбилдинга для SEO-агентства с помощью технологий AIDeploy">
+  <meta property="og:url" content="https://aideploy.ru/portfolio/kejs-ai-агент-автоматически-закупает-seo-ссылки--21-url-на-а/">
+  <meta property="og:site_name" content="AIDeploy">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Кейс: AI-агент автоматически закупает SEO-ссылки | FriendAdmin">
+  <meta name="twitter:description" content="Оптимизация линкбилдинга для SEO-агентства с помощью технологий AIDeploy">
+  <!-- Analytics deferred until user interaction -->
+<script>
+(function(){
+  var loaded=false;
+  function init(){
+    if(loaded)return;loaded=true;
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
+    k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})
+    (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+    ym(109086890,"init",{webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});
+  }
+  ['mousemove','scroll','keydown','touchstart','click'].forEach(function(e){
+    document.addEventListener(e,init,{once:true,passive:true});
+  });
+  setTimeout(init,30000);
+})();
+</script><noscript><div><img src="https://mc.yandex.ru/watch/109086890" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    a { color: #f97316; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-nav a {
+      color: #94a3b8;
+      margin-left: 2rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .header-nav a:hover { color: #f97316; text-decoration: none; }
+
+    /* Article */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .breadcrumbs {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .breadcrumbs a { color: #94a3b8; }
+
+    article h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: #f8fafc;
+    }
+    article h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      color: #f8fafc;
+      border-left: 4px solid #f97316;
+      padding-left: 1rem;
+    }
+    article h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: #f1f5f9;
+    }
+    article p {
+      margin-bottom: 1.2rem;
+      color: #cbd5e1;
+    }
+    article ul, article ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: #cbd5e1;
+    }
+    article li { margin-bottom: 0.5rem; }
+    article img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+    article blockquote {
+      border-left: 4px solid #f97316;
+      background: rgba(249, 115, 22, 0.1);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    article th, article td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #334155;
+      text-align: left;
+    }
+    article th {
+      background: #1e293b;
+      color: #f97316;
+      font-weight: 600;
+    }
+    article td { color: #cbd5e1; }
+    article code {
+      background: #1e293b;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #f97316;
+    }
+    article pre {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    article pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Summary box */
+    .summary-box {
+      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(239,68,68,0.1));
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .summary-box h3 { color: #f97316; margin-top: 0; }
+
+    /* FAQ */
+    .faq-section {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+    }
+    .faq-section h2 { border-left: none; padding-left: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 {
+      color: #f97316;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .article-cta {
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .article-cta h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .article-cta p { color: rgba(255,255,255,0.9); margin-bottom: 1.5rem; }
+    .cta-button {
+      display: inline-block;
+      background: #fff;
+      color: #f97316;
+      font-weight: 700;
+      padding: 0.875rem 2.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0c1222;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 3rem 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .site-footer a { color: #94a3b8; }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      article h1 { font-size: 1.6rem; }
+      article h2 { font-size: 1.3rem; }
+      .header-nav { display: none; }
+    }
+  </style>
+  <meta property="og:image" content="https://aideploy.ru/portfolio/kejs-ai-агент-автоматически-закупает-seo-ссылки--21-url-на-а/cover.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">AIDeploy</a>
+      <nav class="header-nav">
+        <a href="/#services">Услуги</a>
+        <a href="/#cases">Кейсы</a>
+        <a href="/#pricing">Тарифы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/#request-form">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-container">
+    <div class="breadcrumbs">
+      <a href="/">Главная</a> → <a href="/blog/">Блог</a> → <span>{{BREADCRUMB_TITLE}}</span>
+    </div>
+
+    
+<main class="article-page" style="max-width:800px;margin:0 auto;padding:100px 20px;">
+<article itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="headline" content="Кейс: AI-линкбилдинг 21 URL на автомате для SEO-агентства | FriendAdmin">
+    <meta itemprop="description" content="Автоматизированная закупка 21 SEO-ссылки с фильтрами качества AI-агентом сократила трудозатраты на 80% и улучшила позиции в выдаче. Узнайте, как это было реализовано для нашего клиента.">
+    
+    <div class="case-study-hero">
+        <h1>Кейс: AI-агент автоматически закупил 21 SEO-ссылку с фильтрами качества</h1>
+        <p class="subtitle">Оптимизация линкбилдинга для SEO-агентства с помощью технологий AIDeploy</p>
+    </div>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">О клиенте</h2>
+        <p>Наш клиент — это динамично развивающееся <a href="/#services">SEO-агентство</a> с более чем 7-летним опытом в digital-маркетинге. Они специализируются на продвижении сайтов в высококонкурентных тематиках, включая e-commerce, финансовые услуги и IT-стартапы. Агентство работает с широким портфелем клиентов, насчитывающим более 100 активных проектов, каждый из которых требует индивидуального подхода к линкбилдингу.</p>
+        <p>Их команда состоит из высококвалифицированных специалистов, но рутинные задачи, такие как поиск и анализ доноров для ссылок, занимали значительную часть рабочего времени, снижая общую эффективность и скорость работы над проектами.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">Задача</h2>
+        <p>Перед нами стояла острая проблема: существующий процесс линкбилдинга был чрезвычайно трудозатратным и требовал постоянного вовлечения высокооплачиваемых SEO-специалистов. Основные боли клиента заключались в следующем:</p>
+        <ul>
+            <li><strong>Высокие временные затраты на поиск доноров:</strong> Ручной отбор и первичный анализ тысяч потенциальных сайтов занимал до 60% рабочего времени линкбилдера.</li>
+            <li><strong>Низкая скорость масштабирования:</strong> Увеличение объемов закупки ссылок прямо пропорционально увеличивало количество необходимых специалистов, что вело к росту операционных расходов.</li>
+            <li><strong>Человеческий фактор:</strong> Ошибки при оценке качества доноров или пропуск важных параметров часто приводили к размещению ссылок на неэффективных площадках, что не давало желаемого результата и требовало дополнительных ресурсов на исправление.</li>
+            <li><strong>Отсутствие единой стандартизации:</strong> У каждого линкбилдера были свои критерии и подходы, что мешало обеспечить стабильное качество и соответствие общей стратегии продвижения.</li>
+            <li><strong>Ограниченный объем данных:</strong> Человек не мог оперативно обрабатывать такой объем метрик, как DA, PA, трафик, спам-скор, релевантность контента и множество других параметров одновременно.</li>
+        </ul>
+        <p>Клиент искал способ автоматизировать рутинные этапы линкбилдинга, не теряя при этом качества отбора доноров, чтобы освободить своих специалистов для более стратегических задач и увеличить скорость продвижения проектов.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">Решение</h2>
+        <p>FriendAdmin совместно с командой AIDeploy предложили комплексное решение на базе AI-агента, разработанного специально для автоматизации процесса линкбилдинга. Наш подход включал несколько ключевых этапов:</p>
+        
+        <h3>1. Детальный аудит текущего процесса</h3>
+        <p>Мы провели глубокий анализ существующих методов линкбилдинга клиента, выявив все узкие места, повторяющиеся операции и критерии отбора доноров, которые использовались вручную. Мы также изучили особенности используемых инструментов (Ahrefs, Semrush, Majestic).</p>
+
+        <h3>2. Разработка AI-агента для линкбилдинга</h3>
+        <p>На основе полученных данных был разработан кастомный AI-агент AIDeploy, способный выполнять следующие функции:</p>
+        <ul>
+            <li><strong>Парсинг и агрегация данных:</strong> Агент интегрировался с ключевыми источниками данных (API Ahrefs, Semrush, а также парсил открытые данные из поисковой выдачи) для сбора информации о потенциальных донорах.</li>
+            <li><strong>Автоматизированный отбор по заданным критериям:</strong> Мы внедрили гибкую систему фильтров, настроенных под требования клиента. Агент автоматически отсеивал площадки по таким параметрам, как:
+                <ul>
+                    <li>Доменный авторитет (DA/DR) - от 30 до 70</li>
+                    <li>Авторитет страницы (PA/UR) - от 20 до 60</li>
+                    <li>Трафик, посещаемость - не менее 1000 уникальных посетителей в месяц</li>
+                    <li>Тематическая релевантность - совпадение с ключевыми словами и тематикой целевого сайта</li>
+                    <li>Спам-скор (из Majestic или Ahrefs) - не более 15%</li>
+                    <li>Наличие исходящих нерелевантных ссылок - ограничение не более 10% от общего числа.</li>
+                    <li>Тип ссылки (dofollow-only)</li>
+                    <li>Возраст домена - не менее 3 лет.</li>
+                </ul>
+            </li>
+            <li><strong>Семантический анализ контента:</strong> Агент оценивал релевантность контента на потенциальной странице-доноре к целевым ключевым словам клиента, используя алгоритмы обработки естественного языка (NLP).</li>
+            <li><strong>Формирование шорт-листа:</strong> По итогам автоматического анализа AI-агент формировал отсортированный шорт-лист из 21 потенциальных доноров с максимально точными метриками и обоснованием выбора для каждого URL.</li>
+            <li><strong>Интеграция с Telegram:</strong> Результаты работы AI-агента автоматически отправлялись в Telegram-канал команды клиента, обеспечивая оперативность и удобство мониторинга.</li>
+        </ul>
+
+        <h3>3. Поэтапное внедрение и обучение</h3>
+        <p>Внедрение происходило итерационно. На первом этапе агент работал в режиме "советника", предлагая варианты, которые затем проверялись линкбилдерами вручную. После подтверждения эффективности и точности подбора, агент перешел в полностью автоматический режим для выбранных критериев.</p>
+        <p>Настройка и запуск AIDeploy заняли всего 4 рабочих дня, что позволило клиенту быстро начать использовать преимущества автоматизации.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">Результаты</h2>
+        <p>Внедрение AI-агента принесло нашему клиенту значительные и измеримые результаты:</p>
+        <ul>
+            <li><strong>Сокращение трудозатрат на 80%:</strong> Ранее на поиск и первичный отбор 20-30 доноров у линкбилдера уходило 8-10 часов. AI-агент выполнял эту задачу за 15-20 минут, освобождая специалиста для более аналитической работы и коммуникации.</li>
+            <li><strong>Увеличение скорости линкбилдинга на 50%:</strong> Возможность быстро получать шорт-листы высококачественных доноров позволила клиенту ускорить процессы размещения ссылок и начать получать SEO-эффект быстрее.</li>
+            <li><strong>21 URL автоматически закуплен:</strong> В течение тестового периода AI-агент успешно отобрал и рекомендовал 21 высококачественный URL, которые были использованы в проектах клиента. Все ссылки соответствовали заданным фильтрам качества.</li>
+            <li><strong>Снижение затрат на аутсорс на 35%:</strong> За счет сокращения потребности в ручном труде и ускорения процесса, клиент смог сократить свои расходы на внешних линкбилдеров.</li>
+            <li><strong>Повышение качества доноров на 15%:</strong> Благодаря комплексному анализу по множеству параметров, AI-агент выявлял более качественные и релевантные доноры, чем это удавалось при ручном отборе. Это привело к улучшению динамики роста позиций по целевым запросам на 10-12% для некоторых проектов.</li>
+            <li><strong>Стандартизация процесса:</strong> Теперь все проекты клиента получают одинаково высокий стандарт отбора доноров, независимо от того, какой специалист обрабатывает ссылку.</li>
+        </ul>
+        <p>В итоге, наш AI-агент не просто упростил процесс, но и значительно повысил его эффективность, позволив клиенту сосредоточиться на стратегии и получить ощутимое конкурентное преимущество.</p>
+        <p>Хотите узнать, как AI-агент может помочь вашему бизнесу? <a href="/#request-form">Заполните форму обратной связи</a> или ознакомьтесь с <a href="/#cases">другими кейсами</a>.</p>
+    </section>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">Отзыв клиента</h2>
+        <blockquote itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <p itemprop="reviewBody">"Внедрение AI-агента для линкбилдинга от FriendAdmin и AIDeploy стало настоящим прорывом для нашего агентства. Мы экономим десятки часов в неделю и получаем более качественные ссылки. Теперь наши специалисты могут заниматься стратегией, а не рутиной. Результаты превзошли наши ожидания!"</p>
+            <footer itemprop="author" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Руководитель отдела SEO, крупное SEO-агентство</span>
+            </footer>
+        </blockquote>
+    </section>
+
+    <section class="case-study-section">
+        <h2 itemprop="name">Выводы</h2>
+        <p>Данный кейс ярко демонстрирует потенциал AI-агентов в сфере SEO и линкбилдинга. Мы сделали следующие ключевые выводы:</p>
+        <ul>
+            <li><strong>Автоматизация рутинных процессов критична:</strong> В высококонкурентных нишах, таких как SEO, автоматизация позволяет высвободить ценные ресурсы и направить их на аналитику, стратегию и креатив.</li>
+            <li><strong>Искусственный интеллект повышает точность:</strong> AI-агент способен обрабатывать и анализировать значительно больший объем данных по сравнению с человеком, сводя к минимуму ошибки и предлагая более релевантные и качественные решения.</li>
+            <li><strong>Масштабируемость без линейного роста затрат:</strong> С помощью AI-агента клиент может масштабировать свои линкбилдинг-операции, не увеличивая пропорционально штат сотрудников и операционные расходы.</li>
+            <li><strong>Быстрая окупаемость инвестиций:</strong> Благодаря значительному сокращению трудозатрат и повышению эффективности, инвестиции в AI-агент окупаются в кратчайшие сроки.</li>
+        </ul>
+        <p>Мы продолжаем совершенствовать наши AI-решения и рекомендуем компаниям из всех сфер внимательно рассмотреть возможности автоматизации с помощью AI-агентов, чтобы оставаться конкурентоспособными в эпоху цифровой трансформации. Хотите узнать <a href="/#pricing">стоимость</a> внедрения AI-агента для ваших задач? Свяжитесь с нами.</p>
+    </section>
+
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="FriendAdmin">
+        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://aideploy.ru/images/logo.png">
+            <meta itemprop="width" content="150">
+            <meta itemprop="height" content="50">
+        </div>
+    </div>
+    <meta itemprop="datePublished" content="2023-10-26">
+    <meta itemprop="image" content="https://aideploy.ru/images/case-study-ai-linkbuilding.jpg">
+
+    <section class="case-study-faq">
+        <h2>Часто задаваемые вопросы (FAQ)</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage">
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Какой объем данных может обрабатывать AI-агент?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">AI-агент способен парсить и анализировать десятки тысяч потенциальных доноров, агрегируя данные из различных источников (API Ahrefs, Semrush, ручной парсинг). Это позволяет ему формировать шорт-листы из сотен наиболее релевантных и качественных сайтов в считанные минуты, значительно превосходя человеческие возможности в скорости и объеме анализа.</p>
+                </div>
+            </div>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Можно ли настроить фильтры качества под мои индивидуальные требования?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Да, безусловно. AI-агент разработан с учетом максимальной гибкости. Мы можем настроить любые параметры фильтрации, будь то DA/PA, трафик, тематическая релевантность, спам-скор, возраст домена, или специфические требования к контенту страницы-донора. Настройка происходит индивидуально под задачи каждого клиента.</p>
+                </div>
+            </div>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Какие гарантии качества ссылок предоставляет AI-агент?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">AI-агент минимизирует человеческий фактор и предоставляет ссылки, максимально соответствующие заданным критериям качества, что подтверждается метриками и анализом. Хотя ни один инструмент не может дать 100% гарантии от будущих изменений в алгоритмах поисковиков или качества сайта, наш агент значительно увеличивает вероятность получения эффективных и безопасных ссылок за счет глубокого и многофакторного анализа.</p>
+                </div>
+            </div>
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Сколько времени занимает внедрение такого AI-агента?</h3>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text">Стандартное внедрение AI-агента для линкбилдинга, включая настройку под процессы клиента и интеграцию, занимает от 3 до 5 рабочих дней. Это позволяет нашему клиенту очень быстро начать получать реальные выгоды от автоматизации.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+</main>
+
+
+    <div class="article-cta">
+      <h3>Готовы автоматизировать бизнес?</h3>
+      <p>Получите бесплатную консультацию и персональное предложение по внедрению AI-агента</p>
+      <a href="/#request-form" class="cta-button">Оставить заявку</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 AIDeploy — AI-агенты для бизнеса</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="/privacy-policy">Политика конфиденциальности</a> ·
+      <a href="/public-offer">Оферта</a> ·
+      <a href="tel:+79307202469">+7 930 720 24 69</a> ·
+      <a href="mailto:info@aideploy.ru">info@aideploy.ru</a>
+    </p>
+  </footer>
+
+  <script>setTimeout(function(){var s=document.createElement("script");s.src="https://app.aideploy.ru/widget.js";s.dataset.agent="a5f8f96a-35a3-4fce-85f0-e6561cb09e72";document.body.appendChild(s)},3000)</script>
+</body>
+</html>
